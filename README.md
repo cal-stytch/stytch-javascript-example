@@ -50,17 +50,15 @@ Follow the steps below to get this application fully functional and running usin
 In your terminal clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/stytchauth/stytch-javascript-example.git
+git clone https://github.com/cal-stytch/stytch-javascript-example.git
 cd stytch-javascript-example
 npm i
 ```
 
-Next, create `.env.local` file by running the command below and your `public_token`. Learn more about Create React App's support for [custom environment variables here](https://create-react-app.dev/docs/adding-custom-environment-variables/).
-
-```bash
-echo "REACT_APP_STYTCH_PUBLIC_TOKEN=YOUR_TOKEN_HERE" > .env.local
-# For example, echo "REACT_APP_STYTCH_PUBLIC_TOKEN=public-token-test-123abcd-1234-1234-abcd-123123abcabc" > .env.local
-```
+Next, open the file `public/js/app.js` and replace the value assigned to the constant `STYTCH_PUBLIC_TOKEN` with your `public_token`
+```js
+const STYTCH_PUBLIC_TOKEN = "public-token-test-123abcd-1234-1234-abcd-123123abcabc";
+``` 
 
 ## Running locally
 
