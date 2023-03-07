@@ -6,11 +6,11 @@
 
 ## Overview
 
-This example application demonstrates how one may use Stytch within a Vanilla Javascript application. There is a wide ecosystem of tools for building and serving Vanilla JavaScript web apps. For that reason, this example is unopinionated and does not use additional tooling. The entire application is served out of the `public` directory using [`http-server`](https://www.npmjs.com/package/http-server).
+This example application demonstrates how one may use Stytch within a Vanilla JavaScript application. There is a wide ecosystem of tools for building and serving JavaScript web apps each with their own implementation style and flavor. For that reason, this example is unopinionated and does not use additional tooling other than HTML, CSS, and our Vanilla JavaScript SDK. The entire application is served out of the `public` directory using [`http-server`](https://www.npmjs.com/package/http-server).
 
-This project uses Stytch's [Javascript SDK](https://stytch.com/docs/sdks/javascript-sdk) which provides pre-built UI components and headless methods to securely interact with Stytch.
+This project uses Stytch's [JavaScript SDK](https://stytch.com/docs/sdks/javascript-sdk) which provides pre-built UI components and headless methods to securely interact with Stytch.
 
-This application features Email Magic Links and Google OAuth authentication. You can use this application's source code as a learning resource, or use it as a jumping off point for your own project. We are excited to see what you build with Stytch!
+This application features Email Magic Links and Google OAuth for authentication, as well as our Sessions Management product to manage user sessions. You can use this application's source code as a learning resource, or use it as a jumping off point for your own project. We are excited to see what you build with Stytch!
 
 ## Set up
 
@@ -77,7 +77,7 @@ You'll be able to login with Email Magic Links or Google OAuth and see your Styt
 This example app showcases a small portion of what you can accomplish with Stytch. Here are a few ideas to explore:
 
 1. Add additional login methods like [Passwords](https://stytch.com/docs/passwords#guides_getting-started-sdk).
-2. Replace the prebuilt UI with your own using by using the SDK's [headless methods](https://stytch.com/docs/sdks/javascript-sdk).
+2. Replace the pre-built UI with your own using by using the SDK's [headless methods](https://stytch.com/docs/sdks/javascript-sdk).
 3. Replace the Google OAuth button with the high converting [Google One Tap UI](https://stytch.com/docs/oauth#guides_google-sdk).
 4. Secure your app further by building MFA authentication using methods like [WebAuthn](https://stytch.com/docs/sdks/javascript-sdk#webauthn).
 5. Use [Stytch Sessions](https://stytch.com/docs/sessions) to secure your backend.

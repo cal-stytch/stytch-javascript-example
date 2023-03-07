@@ -1,11 +1,11 @@
 import { stytch } from "./app.js";
 
-// Look for query params
+// Look for the Stytch token in query params.
 const queryParams = new URLSearchParams(window.location.search);
 const token = queryParams.get("token");
 const tokenType = queryParams.get("stytch_token_type");
 
-// If a token is found, authenticate it with the appropriate method
+// If a token is found, authenticate it with the appropriate method.
 if (token && tokenType) {
   if (tokenType === "magic_links") {
     stytch.magicLinks
@@ -16,7 +16,7 @@ if (token && tokenType) {
       .catch((err) => {
         console.error(err);
         alert(
-          "Email magic link authentication failed. See console for details."
+          "Email Magic Link authentication failed. See console for details."
         );
       });
   } else if (tokenType === "oauth") {
@@ -31,6 +31,6 @@ if (token && tokenType) {
       });
   }
 } else {
-  // If query params are not found, annouce something went wrong
+  // If query params are not found, announce that something went wrong.
   alert("Something went wrong. No token found to authenticate.");
 }
