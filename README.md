@@ -55,7 +55,7 @@ cd stytch-javascript-example
 npm i
 ```
 
-Next, open the file `public/js/app.js` and replace the value assigned to the constant `STYTCH_PUBLIC_TOKEN` with your `public_token`
+Next, open the file `public/js/app.js` and replace the value assigned to the constant `STYTCH_PUBLIC_TOKEN` with your `public_token`.
 ```js
 const STYTCH_PUBLIC_TOKEN = "public-token-test-123abcd-1234-1234-abcd-123123abcabc";
 ``` 
